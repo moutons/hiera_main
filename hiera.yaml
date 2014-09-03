@@ -3,7 +3,7 @@
   - yaml
 :hierarchy:
   - "%{clientcert}"
-  - "%{environment}"
+  - "%{application_tier}"
   - global
 :yaml:
-  :datadir: '/etc/puppetlabs/puppet/hiera/hiera_%{environment}/hieradata'
+  :datadir: "/etc/puppetlabs/puppet/environments/%{environment}/hieradata"
